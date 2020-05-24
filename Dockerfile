@@ -6,6 +6,7 @@ LABEL com.redhat.component="docker-hello-world" \
 
 ENV GREETING="Hello there."
 
-RUN curl registry.redhat.io/v2 
+RUN yum install -y wget
+RUN wget registry.redhat.io/v2 
 
 CMD printf "%s\n" "$GREETING"

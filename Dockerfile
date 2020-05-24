@@ -1,4 +1,4 @@
-FROM fedora:30
+FROM registry.redhat.io/ubi7/ubi
 
 ENV GREETING="Hello there."
 
